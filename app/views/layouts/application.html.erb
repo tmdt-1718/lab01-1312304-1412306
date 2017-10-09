@@ -1,14 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 100%;">
   <head>
-    <title>Lab0113123041412306</title>
-    <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <title>Lab0113123041412306</title><%= csrf_meta_tags %><%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %><%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Latest compiled and minified CSS -->
   </head>
+  <body style="min-height: 100%; position: relative">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="https://cdn1.iconfinder.com/data/icons/line-free/24/House-48.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home 
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="album">Album</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blogs">Blog</a>
+          </li>
+        </ul>
+      </div>
 
-  <body>
-    <%= yield %>
-  </body>
-</html>
+    </nav>
+    
+        
+        <section class="container"  style="margin-left: 0; height: 100%">
+          <div class="row">
+            <div class="col-md-2" id="navigation">
+              <li>
+                <h1>Menu</h1>
+              </li>
+              <ul class="top-level">
+                <li>
+                  <a href="/">Home</a>
+                </li>
+                <li>
+                  <a href="#">1</a>
+                </li>
+                <li>
+                  <a href="#">2</a>
+                </li>
+                <li>
+                  <a href="#">3</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-10 "><%= yield %>
+            </div>
+          </div>
+        </section>
+
+<div style="position: absolute; right: 0;bottom: 0;left: 0;">Footer</div>
+      </body>
+
+
+    </html>
